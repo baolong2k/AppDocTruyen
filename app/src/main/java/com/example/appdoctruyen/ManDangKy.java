@@ -50,6 +50,9 @@ public class ManDangKy extends AppCompatActivity {
 
                     databaseDocTruyen.AddTaiKhoan(taikhoan1);
                     Toast.makeText(ManDangKy.this,"Đăng ký thành công ",Toast.LENGTH_SHORT).show();
+                    edtDKTaiKhoan.setText("");
+                    edtDKMatKhau.setText("");
+                    edtDKEmail.setText("");
                 }
             }
         });
