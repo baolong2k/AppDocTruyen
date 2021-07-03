@@ -43,17 +43,25 @@
         android:hint="Tài khoản"
         tools:ignore="TouchTargetSizeCheck"></EditText>
 
-    <EditText
-        android:background="@drawable/sign"
-        android:id="@+id/matkhau"
-        android:layout_width="250dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPasswordLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:drawableRight="@drawable/ic_matkhau"
-        android:hint="Mật khẩu"
-        android:inputType="textPassword"
-        tools:ignore="TouchTargetSizeCheck"></EditText>
+        app:passwordToggleEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/sign"
+            android:id="@+id/matkhau"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/ic_matkhau"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/dangnhap"
         android:layout_marginTop="20dp"
